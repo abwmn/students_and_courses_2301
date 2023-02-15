@@ -15,5 +15,4 @@ attr_reader :name, :capacity, :students
   def full?
     @students.length == capacity
   end
-
 end
