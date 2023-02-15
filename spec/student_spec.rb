@@ -1,4 +1,4 @@
-require './lib/student.rb'
+require './lib/student'
 
 RSpec.describe Student do
   before(:each) do
