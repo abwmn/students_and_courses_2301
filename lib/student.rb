@@ -1,5 +1,6 @@
 class Student
-  attr_reader :name, :age, :scores
+  attr_reader :name, :age
+  attr_accessor :scores
 
   def initialize(details)
     @name = details[:name]
