@@ -69,4 +69,26 @@ RSpec.describe Gradebook do
     expect(@gradebook.students_below(80)).to eq([student1, student2])
     expect(@gradebook.students_below(100)).to eq([student1, student2, student3])
   end
+
+  # it 'can list all grades' do
+  #   course1 = Course.new("Calculus", 2)
+  #   course2 = Course.new("Ruby", 3)
+  #   student1 = Student.new({name: "Morgan", age: 21})
+  #   student2 = Student.new({name: "Jordan", age: 29})  
+  #   student3 = Student.new({name: "Michael", age: 23})
+  #   course1.enroll(student1)
+  #   course1.enroll(student2)
+  #   course2.enroll(student3)
+  #   @gradebook.add_course(course1)
+  #   @gradebook.add_course(course2)
+
+  #   student1.log_score(30)
+  #   student1.log_score(40)
+  #   student2.log_score(70)
+  #   student2.log_score(80)
+  #   student3.log_score(80)
+  #   student3.log_score(90)
+
+  #   expect(@gradebook.list_all_grades).to eq({course1=>[30, 40, 70, 80], course2=>[80, 90]})
+  # end
 end

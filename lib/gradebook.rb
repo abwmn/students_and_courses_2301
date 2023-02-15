@@ -29,4 +29,16 @@ class Gradebook
     end
     students_below
   end
+
+  # def list_all_grades
+  #   all_grades = {}
+  #   @courses.each do |course|
+  #     all_grades[course] = []
+  #     course.students.each do |student|
+  #       student.scores.each do |score|
+  #         all_grades[course] << score
+  #       end
+  #     end
+  #   end
+  # end
 end
