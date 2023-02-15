@@ -1,5 +1,5 @@
 class Course
-attr_reader :name, :capacity
+attr_reader :name, :capacity, :students
 
   def initialize(name, capacity)
     @name = name
@@ -7,8 +7,13 @@ attr_reader :name, :capacity
     @students = []
   end
 
+  def enroll(student)
+    return false if full?
+    @students << student
+  end
+
   def full?
-    
+    @students.length == capacity
   end
 
 end
